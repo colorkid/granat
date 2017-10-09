@@ -96,7 +96,9 @@ h1.h1--great-message span {
   background-position: right 6px;
   cursor: pointer;
 }
-.great-message__more-link:hover {
+.great-message__more-link:hover,
+.great-message__more-link:active,
+.great-message__more-link:focus {
   text-decoration: none;
   color: #e3bb1e;
   background-image: url("../images/arrow--active.svg");
