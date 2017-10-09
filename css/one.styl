@@ -1,0 +1,239 @@
+$primary = #1D1E20
+$accent = #E3BB1E
+
+*
+ box-sizing border-box
+
+body
+ font-family 'Lato', sans-serif
+ background-color $primary
+ overflow-x hidden
+
+h2
+ margin-bottom 5px
+ letter-spacing 1px
+ font-size 32px
+ font-weight 900
+ color #fff
+
+.header
+ background-color $primary
+
+.logo
+ line-height 220px
+ text-transform uppercase
+ color #fff
+ background-image url("../images/logo.jpg")
+ background-repeat no-repeat
+ background-size auto
+ background-position 15px 96px
+
+.logo__txt
+ padding-left 45px
+ font-size 30px
+ font-weight 900
+
+.nav
+ line-height 227px
+ text-align right
+
+.nav__ul
+ display inline-block
+ padding 0
+ margin 0
+
+.nav__li
+ display inline-block
+ line-height: initial
+ list-style none
+
+.nav__a
+ padding 0 22.5px
+ font-size 17px
+ font-weight 700
+ color #fff
+ &:hover
+  text-decoration none
+  color $accent
+  cursor pointer
+
+.nav__li
+ &:first-child
+  .nav__a
+   padding-left 0
+
+.nav__li
+ &:last-child
+  .nav__a
+   padding-right 0
+
+.great-message
+ margin-top -7px
+ padding-bottom 140px
+ background-color $primary
+
+.great-message__pre
+ text-transform uppercase
+ font-size 15px
+ color rgba(255, 255, 255, 0.3)
+
+h1.h1--great-message
+ margin 10px 0 12.5px 0
+ line-height 1.45
+ letter-spacing 1px
+ font-size 44px
+ font-weight 400
+ color #fff
+
+h1.h1--great-message span
+ text-transform uppercase
+ color $accent
+
+.great-message__more-link
+ padding-right 14px
+ font-size 15px
+ color rgba(255, 255, 255, 0.3)
+ background-image url("../images/arrow.svg")
+ background-size 9px
+ background-repeat no-repeat
+ background-position right 6px
+ cursor pointer
+ &:hover
+  text-decoration none
+  color $accent
+  background-image url("../images/arrow--active.svg")
+
+.portfolio
+ padding 27.5px 0 80px 0
+ background-color $accent
+
+.portfolio__pic
+ padding 15px
+
+.portfolio__img
+ width 100%
+
+.contacts
+ padding 27.5px 0 95px 0
+ text-align center
+ background-color $primary
+
+.h2--contacts
+ margin-bottom 20px
+
+.contacts__p
+ margin: 9px 0
+ font-size 17px
+ color rgba(255, 255, 255, 0.4)
+
+.contacts__button
+ display inline-block
+ width 255px
+ height 50px
+ margin-top 50px
+ line-height 45px
+ border 2px solid $accent
+ text-transform uppercase
+ font-weight 700
+ font-size 16px
+ color $accent
+ &:hover,
+ &:active,
+ &:focus
+  text-decoration none
+  color #fff
+  border-color #fff
+
+.footer
+ height 85px
+ border-top 1px solid rgba(255, 255, 255, 0.2)
+ background-color $primary
+
+.copyright
+ line-height 84px
+ text-transform uppercase
+ font-size 12px
+ color rgba(255, 255, 255, 0.3)
+
+.nav--footer
+ line-height 84px
+
+.nav__a--footer
+ padding 0px 27.5px
+ background-size 20px
+ background-repeat no-repeat
+ background-position center
+ opacity 0.3
+ &:hover
+  opacity 1
+
+.nav__a--fb
+ background-image url("../images/fb.svg")
+
+.nav__a--in
+ background-image url("../images/in.svg")
+
+.nav__a--tw
+ background-image url("../images/tw.svg")
+
+body div:not(.preloader)
+ opacity 0
+
+.visible
+ opacity 1
+
+.hidden
+ opacity 0 
+
+.preloader
+ width 75px
+ height 75px
+ display inline-block
+ padding 0px
+ border-radius 100%
+ border 6px solid
+ border-top-color $accent
+ border-bottom-color #fff
+ border-left-color #fff
+ border-right-color $accent
+ animation preloader 0.8s linear infinite
+ position fixed
+ top 50%
+ left 50%
+ margin-left -25px
+ margin-top -25px
+
+@keyframes preloader
+ from {transform: rotate(0deg);}
+ to {transform: rotate(360deg);}
+
+
+@media (max-width: 767px)
+ .header
+  height 150px
+
+ .nav
+  line-height 25px
+  text-align center
+
+ .logo
+  line-height 75px
+  text-align center
+  background-image none
+
+ .logo__txt
+  padding-left 0 
+
+ .great-message
+  padding-bottom 70px
+  text-align center 
+ 
+ h1.h1--great-message
+  font-size 28px
+
+ .portfolio
+  padding-bottom 70px
+
+ .nav--footer
+  text-align right
+  line-height 84px
