@@ -51,7 +51,9 @@ h2 {
   font-weight: 700;
   color: #fff;
 }
-.nav__a:hover {
+.nav__a:hover,
+.nav__a:active,
+.nav__a:focus {
   text-decoration: none;
   color: #e3bb1e;
   cursor: pointer;
